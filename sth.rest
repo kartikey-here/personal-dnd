@@ -1,0 +1,240 @@
+GET http://localhost:2001/api/allsongs
+
+
+###
+get http://localhost:2001/api/asong/ASS00004
+
+
+###
+GET http://localhost:2001/api/playlist/MOOD1
+
+###
+POST http://localhost:2001/api/newplaylist
+
+{       
+        "playListName":"Happy",
+        "playListCreator":"ASU00001",
+        "playListCover":"hey"
+    }
+
+###
+//login
+POST http://localhost:2001/api/login
+Content-Type: application/json
+
+{
+    "userName":"us",
+    "userPass":"p"
+}
+
+###
+//regis
+POST http://localhost:2001/api/register
+Content-Type: application/json
+
+{
+    "userName":"uu22",
+    "userPass":"pp232",
+    "userPhoneNumber":123422567890
+}
+
+###
+//return data
+get http://localhost:2001/api/userdetail/gentleman
+
+###
+//upload song
+POST http://localhost:2001/api/newsong
+Content-Type: application/json
+
+{
+    "songName":"Lagaai dehi choliya k hook rajaji",
+    "songUploader":"kk da boss",
+    "songAlbumCover":"./img.jpg",
+    "artistName":"Arvind Akela Kallu",
+    "url":"o yeah.mp3",
+    "mood":"Happy"
+}
+
+###
+//new mood
+post http://localhost:2001/api/newmood
+Content-Type: application/json
+
+{    
+    "moodName":"Excited",
+    "moodCreator": "ASU00001",
+    "moodCover":"https://www.shutterstock.com/image-vector/slogan-hey-text-style-design-260nw-2138568763.jpg"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//new user register
+###
+POST http://localhost:2001/api/register
+Content-Type: application/json
+
+{
+    "userName":"devpratham",
+    "userPass":"asprthm@123",
+    "userPhoneNumber":9876543210,
+    "userBio":"Developer Hu Smjha"
+}
+
+//1 user
+###
+get http://localhost:2001/api/userdetail/ASU00001
+//all users
+###
+get http://localhost:2001/api/allusers
+
+//allgames
+###
+get http://localhost:2001/api/allgames
+
+//new game
+###
+post http://localhost:2001/api/newgame
+Content-Type: application/json
+
+{
+    "html5gamesName":"NFS MW1",
+    "html5gamesPp":"sth.jpg",
+    "html5gamesCreator":"ASU00001",
+    "html5gamesLink":"sth.com"
+}
+//all playlist
+###
+GET http://localhost:2001/api/allpublikplaylists
+
+
+//a playlist
+###
+GET http://localhost:2001/api/playlist/ASP00002
+
+
+//new playlist
+###
+posT http://localhost:2001/api/newplaylist
+Content-Type: application/json
+
+{
+        "playListName": "playListName",
+        "playListCover": "playListCover",
+        "playListCreator": "ASU00001",
+        "collaborative": true,
+        "publik": true
+}
+
+//genre
+###
+GET HTTP://localhost:2001/api/allgenres
+###
+GET HTTP://localhost:2001/api/genredetail/GENRE1
+###
+post http://localhost:2001/api/newgenre
+Content-Type: application/json
+
+{
+        "genreName": "genreName",
+        "genreCover": "genreCover",
+        "genreCreator":"ASU00001"
+
+}
+
+//mood
+###
+GET HTTP://localhost:2001/api/allmoods
+###
+GET HTTP://localhost:2001/api/mooddetail/MOOD5
+###
+post http://localhost:2001/api/newmood
+Content-Type: application/json
+
+{
+        "moodName": "moodNamde",
+        "moodCover": "moodCover",
+        "moodCreator":"ASU00001"
+
+}
+
+
+
+//feedback section
+###
+GET http://localhost:2001/api/allfeedbacks
+###
+GET http://localhost:2001/api/feedbackdetail/FEEDBACK4
+###
+post http://localhost:2001/api/newfeedback
+Content-Type: application/json
+
+{
+    
+        "feedbackTitle": "feedbackTitle",
+        "feedbackContent": "feedbackContent",
+        "feedbackCreator": "ASU00001"
+}
+//songssssssssssssssssss section
+###
+GET http://localhost:2001/api/allsongs
+###
+GET http://localhost:2001/api/asong/ASS00009
+###
+post http://localhost:2001/api/newsong
+Content-Type: application/json
+
+{
+        "songName": "songName",
+        "mood": "Happy",
+        "genre": "Rock",
+        "songUploader": "songCreator",
+        "songAlbumCover": "songAlbumCover",
+        "artistName": "artistName",
+        "url": "apilink"
+}
+
+
+###
+get http://localhost:2001/api/asong/ASS1f14d120-ec12-4808-a4ab-8e51a69cef3d
+###
+get http://localhost:2001/api/asong/ASS1f14d120-ec12-4808-a4ab-8e51a69cef3d
+###
+get http://localhost:2001/api/search/happy
